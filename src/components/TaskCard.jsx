@@ -14,7 +14,7 @@ export default function TaskCard({ taskDetails, toggleCompleted, deleteTask }) {
       <div className="flex items-center gap-3">
         <IoIosCloseCircleOutline
           onClick={onClickTask}
-          className="hover:text-violet-800 cursor-pointer"
+          className="hover:text-violet-950 cursor-pointer" size={16}
         />
         <p
           className={`${
@@ -28,6 +28,7 @@ export default function TaskCard({ taskDetails, toggleCompleted, deleteTask }) {
       </div>
       <MdDeleteOutline
         onClick={onClickDelete}
+        size={16}
         className="hover:text-red-800 cursor-pointer"
       />
     </div>
